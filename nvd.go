@@ -12,7 +12,8 @@ import (
 	"github.com/parnurzeal/gorequest"
 )
 
-func fetchFeedFile(url string) (nvd Nvd, err error) {
+// FetchFeedFile provides the feed file as an NVD Strcut
+func FetchFeedFile(url string) (nvd Nvd, err error) {
 	var body string
 	var errs []error
 	var resp *http.Response
